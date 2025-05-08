@@ -1,2 +1,5 @@
 # finish_project
-Automation testing for rostelecom.
+
+UI testing with Selenium+pytest for rostelecom.
+
+Перед запуском автотестов необходимо установить библиотеки, указанные в файле requirements.txt. Файл с тестами запускается кнопкой run в IDE.
