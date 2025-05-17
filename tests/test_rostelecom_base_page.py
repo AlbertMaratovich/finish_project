@@ -103,9 +103,6 @@ def test_move_to_payment_page_from_header():
     driver.find_element("xpath", locators.l_other_organizations).click()
     # check the url and 404 status
     assert driver.current_url == config.payment_other_organizations_url
-    """Понимаю, что метод достаточно колхозный для обнаружения ошибки 404, думаю что при проектирвоании тестов я бы
-        проверял наличии каких-то главных элементов на странице. По сколько страница падает в ошибку я не могу заранее
-        определить такой элемент (открывается заглушка для 404), а статус код при помощи селениума проверить нельзя"""
     if config.error_not_found_text in driver.page_source:
         raise Exception("Status - 404 Not Found")
 
