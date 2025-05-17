@@ -373,7 +373,7 @@ def test_reg_name_validation(driver):
     field = driver.find_element("xpath", "//div/input[@name='firstName']")
     field.clear()
 
-    # чекаем 31 символ
+    # проверяем 31 символ
     field.send_keys("Прпвыоывровыорвыоопвылопвыловып")
     base_element = driver.find_element("id", "card-title")
     base_element.click()
@@ -383,7 +383,7 @@ def test_reg_name_validation(driver):
     else:
         raise Exception("Поле валидировало невалидные данные")
 
-    # чекаем латиницу
+    # проверяем латиницу
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -395,7 +395,7 @@ def test_reg_name_validation(driver):
     else:
         raise Exception("Поле валидировало невалидные данные")
 
-    # чекаем спец символы
+    # проверяем спец символы
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -407,7 +407,7 @@ def test_reg_name_validation(driver):
     else:
         raise Exception("Поле валидировало невалидные данные")
 
-    # чекаем только допустимый спец символ
+    # проверяем только допустимый спец символ
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -419,7 +419,7 @@ def test_reg_name_validation(driver):
     else:
         raise Exception("Поле валидировало невалидные данные")
 
-    # чекаем цифру
+    # проверяем цифру
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -431,7 +431,7 @@ def test_reg_name_validation(driver):
     else:
         raise Exception("Поле валидировало невалидные данные")
 
-    # чекаем пробел
+    # проверяем пробел
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -443,7 +443,7 @@ def test_reg_name_validation(driver):
     else:
         raise Exception("Поле валидировало невалидные данные")
 
-    # чекаем 8 символов на кириллице
+    # проверяем 8 символов на кириллице
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -453,7 +453,7 @@ def test_reg_name_validation(driver):
     if hint:
         assert not hint[0].is_displayed(), "Поле валидировало невалидные данные"
 
-    # чекаем серединку по количеству символов на кириллице
+    # проверяем серединку по количеству символов на кириллице
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -463,7 +463,7 @@ def test_reg_name_validation(driver):
     if hint:
         assert not hint[0].is_displayed(), "Поле валидировало невалидные данные"
 
-    # чекаем допустимый спецсимвол
+    # проверяем допустимый спецсимвол
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -489,7 +489,7 @@ def test_reg_lastname_validation(driver):
     field = driver.find_element("xpath", "//div/input[@name='lastName']")
     field.clear()
 
-    # чекаем 31 символ
+    # проверяем 31 символ
     field.send_keys("Прпвыоывровыорвыоопвылопвыловып")
     base_element = driver.find_element("id", "card-title")
     base_element.click()
@@ -499,7 +499,7 @@ def test_reg_lastname_validation(driver):
     else:
         raise Exception("Поле валидировало невалидные данные")
 
-    # чекаем латиницу
+    # проверяем латиницу
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -511,7 +511,7 @@ def test_reg_lastname_validation(driver):
     else:
         raise Exception("Поле валидировало невалидные данные")
 
-    # чекаем спец символы
+    # проверяем спец символы
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -523,7 +523,7 @@ def test_reg_lastname_validation(driver):
     else:
         raise Exception("Поле валидировало невалидные данные")
 
-    # чекаем только допустимый спец символ
+    # проверяем только допустимый спец символ
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -535,7 +535,7 @@ def test_reg_lastname_validation(driver):
     else:
         raise Exception("Поле валидировало невалидные данные")
 
-    # чекаем цифру
+    # проверяем цифру
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -547,7 +547,7 @@ def test_reg_lastname_validation(driver):
     else:
         raise Exception("Поле валидировало невалидные данные")
 
-    # чекаем пробел
+    # проверяем пробел
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -559,7 +559,7 @@ def test_reg_lastname_validation(driver):
     else:
         raise Exception("Поле валидировало невалидные данные")
 
-    # чекаем 8 символов на кириллице
+    # проверяем 8 символов на кириллице
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -569,7 +569,7 @@ def test_reg_lastname_validation(driver):
     if hint:
         assert not hint[0].is_displayed(), "Поле валидировало невалидные данные"
 
-    # чекаем серединку по количеству символов на кириллице
+    # проверяем серединку по количеству символов на кириллице
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -579,7 +579,7 @@ def test_reg_lastname_validation(driver):
     if hint:
         assert not hint[0].is_displayed(), "Поле валидировало невалидные данные"
 
-    # чекаем допустимый спецсимвол
+    # проверяем допустимый спецсимвол
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -605,7 +605,7 @@ def test_reg_phone_email_validation(driver):
     field.clear()
     driver.implicitly_wait(0.3)
 
-    # чекаем рандомные числа правильной длины, не с 8/7/9/375
+    # проверяем рандомные числа правильной длины, не с 8/7/9/375
     field.send_keys("56565656565")
     base_element = driver.find_element("id", "card-title")
     base_element.click()
@@ -615,7 +615,7 @@ def test_reg_phone_email_validation(driver):
     else:
         raise Exception("Поле валидировало невалидные данные")
 
-    # чекаем рандомные числа не правильной длины, 8/7/9/375
+    # проверяем рандомные числа не правильной длины, 8/7/9/375
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -627,7 +627,7 @@ def test_reg_phone_email_validation(driver):
     else:
         raise Exception("Поле валидировало невалидные данные")
 
-    # чекаем рандомные числа не правильной длины, 8/7/9/375
+    # проверяем рандомные числа не правильной длины, 8/7/9/375
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -639,7 +639,7 @@ def test_reg_phone_email_validation(driver):
     else:
         raise Exception("Поле валидировало невалидные данные")
 
-    # чекаем рандомные буквы латиница
+    # проверяем рандомные буквы латиница
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -651,7 +651,7 @@ def test_reg_phone_email_validation(driver):
     else:
         raise Exception("Поле валидировало невалидные данные")
 
-    # чекаем рандомные буквы кириллица
+    # проверяем рандомные буквы кириллица
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -663,7 +663,7 @@ def test_reg_phone_email_validation(driver):
     else:
         raise Exception("Поле валидировало невалидные данные")
 
-    # чекаем рандомные спец символы
+    # проверяем рандомные спец символы
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -675,7 +675,7 @@ def test_reg_phone_email_validation(driver):
     else:
         raise Exception("Поле валидировало невалидные данные")
 
-    # чекаем не валидную почту
+    # проверяем не валидную почту
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -687,7 +687,7 @@ def test_reg_phone_email_validation(driver):
     else:
         raise Exception("Поле валидировало невалидные данные")
 
-    # чекаем не валидную почту
+    # проверяем не валидную почту
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -699,7 +699,7 @@ def test_reg_phone_email_validation(driver):
     else:
         raise Exception("Поле валидировало невалидные данные")
 
-    # чекаем не валидный номер с 8
+    # проверяем не валидный номер с 8
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -711,7 +711,7 @@ def test_reg_phone_email_validation(driver):
     else:
         raise Exception("Поле валидировало невалидные данные")
 
-    # чекаем не валидный номер с 7
+    # проверяем не валидный номер с 7
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -723,7 +723,7 @@ def test_reg_phone_email_validation(driver):
     else:
         raise Exception("Поле валидировало невалидные данные")
 
-    # чекаем не валидный номер с 375
+    # проверяем не валидный номер с 375
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -735,7 +735,7 @@ def test_reg_phone_email_validation(driver):
     else:
         raise Exception("Поле валидировало невалидные данные")
 
-    # чекаем не валидный номер с 9
+    # проверяем не валидный номер с 9
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -747,7 +747,7 @@ def test_reg_phone_email_validation(driver):
     else:
         raise Exception("Поле валидировало невалидные данные")
 
-    # чекаем валидный номер с 8
+    # проверяем валидный номер с 8
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -757,7 +757,7 @@ def test_reg_phone_email_validation(driver):
     if hint:
         assert not hint[0].is_displayed(), "Поле не валидировало валидные данные"
 
-    # чекаем валидный номер с 7
+    # проверяем валидный номер с 7
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -767,7 +767,7 @@ def test_reg_phone_email_validation(driver):
     if hint:
         assert not hint[0].is_displayed(), "Поле не валидировало валидные данные"
 
-    # чекаем валидный номер с 9
+    # проверяем валидный номер с 9
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -777,7 +777,7 @@ def test_reg_phone_email_validation(driver):
     if hint:
         assert not hint[0].is_displayed(), "Поле не валидировало валидные данные"
 
-    # чекаем валидный номер с 375
+    # проверяем валидный номер с 375
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -787,7 +787,7 @@ def test_reg_phone_email_validation(driver):
     if hint:
         assert not hint[0].is_displayed(), "Поле не валидировало валидные данные"
 
-    # чекаем валидную почту латиница
+    # проверяем валидную почту латиница
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -797,7 +797,7 @@ def test_reg_phone_email_validation(driver):
     if hint:
         assert not hint[0].is_displayed(), "Поле не валидировало валидные данные"
 
-    # чекаем валидную почту кириллица
+    # проверяем валидную почту кириллица
     field.send_keys(Keys.CONTROL + "a", Keys.BACKSPACE)
     base_element.click()
     field.clear()
@@ -805,8 +805,7 @@ def test_reg_phone_email_validation(driver):
     base_element.click()
     hint = driver.find_elements("css selector", "span.rt-input-container__meta.rt-input-container__meta--error")
     if hint:
-        assert not hint[0].is_displayed(), ("Поле не валидировало валидные данные. Нужны уточнения"
-                                            " по поводу использования кириллической почты")
+        assert not hint[0].is_displayed(), "Поле не валидировало валидные данные"
 
 
 def test_reg_user_case_1(driver):

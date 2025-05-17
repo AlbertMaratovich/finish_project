@@ -1,7 +1,7 @@
 valid_email = "gimalov.98@mail.ru"
 valid_password = "QW67$TAEL$_vQeJ"
-phone = "89170766996"
-random_email = "sdhjhdffggqws@mail.com"
+phone = "89175455696"
+random_email = "sdhjsdgshdpws@mail.com"
 random_password = "Correctpass66!"
 
 """Ссылки для тестирования страницы ростелекома"""
